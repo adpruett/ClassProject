@@ -1,0 +1,16 @@
+<h1>Set your goal</h1>
+
+
+
+
+<%= form_for @goal do |f| %>
+
+
+  <div class="dropdown-label">Select a goal:</div>
+  <%= f.select(:ind_goal,options_for_select(@goals_for_dropdown),{}, :class => "dropdown") %>
+
+  <%= f.submit 'Create My Account Already!' %>
+
+<% end %>
+
+      <!-- Button trigger modal -->
