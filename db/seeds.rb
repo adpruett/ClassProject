@@ -5,13 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-goals = { "Health" => ["Lose Wieght","Add Muscle", "Eat Healthier"],
-          "Lifstyle" => ["Meet People"]
-        }
+goals = [ "Lose Weight", "Travel More", "Find a Girlfriend", "Graduate College" ]
 
 
-goals.each do |key, value|
-  value.each do |i|
-    Goal.create!(goal_category: key, ind_goal: i)
-  end
+goals.each do |key|
+  Goal.create!(ind_goal: key)
 end
+
+User.create!(email: "adam@adam.com", password: "123456")

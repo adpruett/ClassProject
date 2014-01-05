@@ -27,57 +27,11 @@
 
   <body>
 
-      <!-- header  -->
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div >
-            <form class="navbar-form navbar-right">
-              <%= form_tag session_path do %>
-                <div class="form-group">
-                  <%= email_field_tag('email',nil, class: "form-control", placeholder: "Email") %>
-                </div>
 
-                <div class="form-group">
-                  <%= password_field_tag 'password',nil,class: "form-control", placeholder: "Password" %>
-                </div>
-
-                <%= submit_tag 'Sign in', class: "btn btn-success" %>
-                <!--<div class="form-group">
-                  <%= button_to 'Sign up', class: "btn btn-success" %>
-                </div> -->
-              <% end %>
-
-            </form>
-          </div><!--/.navbar-collapse -->
-
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#">LivAloud</a>
-
-            <div class="index-bottom-container">
-              <%= link_to "What is LivAloud?", new_goal_path, class: "index-bottom-button" %>
-              <%= link_to "Community", new_goal_path, class: "index-bottom-button" %>
-              <%= link_to "About Us", new_goal_path, class: "index-bottom-button" %>
-
-            </div>
-
-
-
-          </div>
-
-
-        </div>
-      </div>
 
       <!-- Main body for telling life-changers they are at the right place  -->
-      <div class="index-header">
-        <div class="container wrapper">
+      <div>
+        <div>
 
 
           <h1>Start planning now and achieve your dreams tomorrow.</h1>
@@ -111,6 +65,8 @@
                 class: "signup-btn btn-lg"%>
 
           <% end %>
+
+
 
         </div>
 

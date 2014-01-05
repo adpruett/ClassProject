@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131218043627) do
+ActiveRecord::Schema.define(version: 20131220034853) do
 
   create_table "goal_categories", force: true do |t|
     t.string   "category"
@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 20131218043627) do
   end
 
   create_table "user_goals", force: true do |t|
-    t.integer  "goal_key"
-    t.integer  "user_key"
+    t.integer  "goal_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

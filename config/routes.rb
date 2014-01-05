@@ -5,6 +5,8 @@ Livaloud::Application.routes.draw do
   get "user_goals/edit"
   resources :users, only: [:new, :create]
 
+  resources :user_goals
+
   resource :session, only: %w(new create destroy)
 
   root "users#index"

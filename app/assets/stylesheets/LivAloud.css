@@ -46,6 +46,12 @@ body {
   text-align: right;
 }
 
+.img-profile {
+
+  float:right;
+  margin-right: 25px;
+}
+
 .img-index {
 
   float:left;
@@ -65,6 +71,10 @@ body {
   margin-bottom: 10px;
   font-size: 40px;
 
+}
+
+.a {
+  color: white;
 }
 
 .navbar-inverse .navbar-brand {
@@ -98,18 +108,8 @@ body {
 }
 
 
-.dropdown .selected,
-  .dropdown li {
-    display: block;
-    font-size: 16px;
-    line-height: 1;
-    color: #000;
-    padding: 9px 12px;
-    overflow: hidden;
-    white-space: nowrap;
-}
 
-  .dropdown-label {
+.dropdown-label {
     font-size: 15px;
     font-weight: 300;
     padding-top: 14px;
@@ -192,7 +192,15 @@ body {
     padding-top: 10px;
   }
 
-
+.top-header {
+  font-size: 12px;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  padding-left: 5px;
+  color: #666666;
+}
 
 
 h1,
@@ -812,12 +820,12 @@ h1,
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
-.btn-default.active,
-.open .dropdown-toggle.btn-default {
+.btn-default.active {
   color: #333333;
   background-color: #ebebeb;
   border-color: #adadad;
 }
+
 
 .btn-success {
   color: #ffffff;
@@ -828,8 +836,7 @@ h1,
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active,
-.btn-success.active,
-.open .dropdown-toggle.btn-success {
+.btn-success.active {
   color: #ffffff;
   background-color: #428bca;
   border-color: #357ebd;
@@ -845,14 +852,14 @@ h1,
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.btn-primary.active {
   color: #ffffff;
   background-color: #3276b1;
   border-color: #285e8e;
 }
 
 
+/***************************************/
 /* Dropdowns for Goal Category and Goal*/
 .dropdown,
 .dropdown div,
@@ -1060,3 +1067,6 @@ h1,
   font-weight: 700;
 }
 
+.navbar-brand a {
+  color:white;
+}
